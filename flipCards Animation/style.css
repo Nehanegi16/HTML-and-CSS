@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+.thecard{
+    margin: 10% 0 0 50%;
+    position: absolute;
+    width: 300px;
+    transform-style:preserve-3d ;
+    transition: all 0.5s ease;
+
+}
+.front{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    background-image:linear-gradient(180deg,green 0%,lightgreen 30%,yellow 50%);
+    backface-visibility: hidden;
+   
+}
+.back{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    background-image: linear-gradient(180deg,red 0%,orange 30%,yellow 50%);
+    backface-visibility: hidden;
+    transform: rotatey(180deg);
+    
+}
+.thecard:hover{
+    transform:rotatey(180deg)
+
+}
